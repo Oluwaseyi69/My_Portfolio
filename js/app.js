@@ -1,5 +1,3 @@
-//Header fixed
-
 window.onscroll = function () {
   const docScrollTop = document.documentElement.scrollTop;
 
@@ -12,7 +10,6 @@ window.onscroll = function () {
   }
 }
 
-//navbar links
 
 const navbar = document.querySelector(".navbar");
 a = navbar.querySelectorAll("a")
@@ -27,7 +24,6 @@ a.forEach(function (element) {
   })
 })
 
-//Hamburger
 
 const hamBurger = document.querySelector(".hamburger");
 
@@ -35,7 +31,6 @@ hamBurger.addEventListener("click", function () {
   document.querySelector(".navbar").classList.toggle("show");
 })
 
-//Portfolio Gallery
 
 const filterBtn = document.querySelector("#filterBtn").children;
 const item = document.querySelector(".gallery").children;
@@ -87,7 +82,6 @@ galleryItem.forEach(function (element) {
   });
 });
 
-// Testimonials Slider
 
 const sliderContainer = document.querySelector(".testimonials-box");
 const slider = sliderContainer.children;
@@ -176,6 +170,5 @@ let timer = setInterval(autoPlay, 5000);
 window.onload = load();
 
 
-//Footer Year 
 var year = document.getElementById("year");
 year.innerHTML = new Date().getFullYear();
